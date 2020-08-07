@@ -1,0 +1,40 @@
+body {
+    background-color: aliceblue;
+    font-family: 'Roboto Slab';
+}
+.clear {
+    clear: both;
+}
+main {
+    background-image: url(../img/concrete-texture.png);
+    width: 1000px;
+    height: 700px;
+    margin: 0 auto;
+}
+h3 {
+    position: relative;
+    left: 10px;
+    top: 20px;
+}
+section {
+    float: left;
+    width: 400px;
+    height: 550px;
+    background-color: paleturquoise;
+    text-align: center;
+    position: relative;
+    left: 100px;
+}
+div {
+    width: 800px;
+    height: 10px;
+    background-color: powderblue;
+    margin: auto;
+    margin-bottom: 0;
+}
+footer {
+    background-color: steelblue;
+    width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
