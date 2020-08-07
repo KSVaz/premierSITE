@@ -1,0 +1,32 @@
+body {
+    background-color: darkgoldenrod;
+    text-align: center;
+    font-family:'Roboto Slab', serif;
+    font-size: 1.2em;
+}
+main {
+    width: 1200px;
+    margin: 0 auto;
+}
+header {
+    background-color: burlywood;
+    margin-top: 40px;
+    height: 160px;
+    padding-top: 5px;
+    box-sizing: border-box;
+    border-radius: 10px 10px 0px 0px ;
+}
+aside {
+    background-color: wheat;
+    float: left;
+    width: 200px;
+    min-height: 500px;
+    border-radius: 0px 0px 0px 10px;
+}
+section {
+    background-color: bisque;
+    float: left;
+    width: 1000px;
+    min-height: 500px;
+    border-radius: 0px 0px 10px 0px;
+}
