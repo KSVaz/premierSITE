@@ -1,0 +1,112 @@
+body {
+    background-color: white;
+}
+
+.clear {
+    clear: both;
+}
+
+#zoning5 {
+    background-color:whitesmoke;
+    width: 1000px;
+    height: 720px;
+    margin: auto;
+    text-align: center;
+    font-family: 'Roboto', sans serif;
+    color: #ffffff;
+}
+
+#zoning5 header {
+    background-color: rgb(90, 4, 90);
+    height: 80px;
+}
+
+#zoning5 nav {
+    background-color: silver;
+    height: 30px;
+}
+
+#zoning5 nav p {
+    margin-top: 0;
+}
+
+#zoning5 section {
+    height: 500px;
+    margin: 20px;
+}
+
+#zoning5 .a {
+    background-color:gold ;
+    height: 250px;
+    width: 480px;
+    float: left;
+}
+
+#zoning5 .b {
+    background-color:yellowgreen ;
+    height: 250px;
+    width: 480px;
+    float: left;
+}
+
+#zoning5 .c {
+    background-color:hotpink ;
+    height: 250px;
+    width: 480px;
+    float: left;
+}
+
+#zoning5 .d {
+    background-color:darkturquoise ;
+    height: 250px;
+    width: 480px;
+    float: left;
+}
+
+/* #zoning5 .a {
+    background-color:gold ;
+    height: 250px;
+    width: 470px;
+    float: left;
+    margin: auto;
+    position: relative;
+    top: 22px;
+    left: 30px;
+}
+
+#zoning5 .b {
+    background-color:yellowgreen ;
+    height: 250px;
+    width: 470px;
+    float: left;
+    position: relative;
+    top: 22px;
+    left: 30px;
+}
+
+#zoning5 .c {
+    background-color:hotpink ;
+    height: 250px;
+    width: 470px;
+    float: left;
+    margin: auto;
+    position: relative;
+    top: 22px;
+    left: 30px;
+}
+
+#zoning5 .d {
+    background-color:darkturquoise ;
+    height: 250px;
+    width: 470px;
+    float: left;
+    margin: auto;
+    position: relative;
+    top: 22px;
+    left: 30px;
+} */
+
+#zoning5 footer {
+    background-color: rgb(90, 4, 90);
+    height: 60px;
+}

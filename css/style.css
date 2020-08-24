@@ -283,7 +283,146 @@ img[src="img/toureiffel.jpg"] {
 }
 
 /* zoning 2  */
-/* à terminer */
+
+.clear {
+    clear: both;
+}
+#zoning2 {
+    width: 800px;
+	margin: auto;
+	text-align: center;
+	font-family: 'Roboto Slab', serif;
+}
+#zoning2 header {
+    background-color: darkcyan;
+    color: aliceblue;
+    height: 70px;
+}
+#zoning2 aside {
+    background-color: lightseagreen;
+    height: 525px;
+	width: 20%;
+	float: left;
+	margin: 0;
+}
+#zoning2 .milieu {
+	background-color: aliceblue;
+    width: 60%;
+    height: 525px;
+	float: left;
+	margin: 0;
+}
+#zoning2 footer {
+	background-color: turquoise;
+	margin: 0;
+}
+#zoning2 footer p {
+	height: 60px;
+    margin: 0;   
+}
+
+/* zoning 3 */
+
+.clear {
+    clear: both;
+}
+
+#zoning3 {
+	background-color: yellowgreen;
+	width: 800px;
+	margin: auto;
+	text-align: center;
+	font-family: 'Roboto', serif;
+}
+
+#zoning3 section {
+    float: left;
+    width: 49.9%;
+    min-height: 525px;
+    background-color: white;
+    float:left;
+    margin: 0;
+}
+
+#zoning3 .bordure {
+	float: left;
+	width: 0.2%;
+	height: 525px;
+	background-color: yellowgreen;
+}
+
+#zoning3 footer {
+    background-color: rgb(71, 4, 71);
+    width: 100%;
+    height: 50px;
+	margin: 0;
+	color: #fff;
+}
+
+/* zoning 4 */
+
+#zoning4 {
+    font-family: 'Roboto', serif;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    width: 800px;
+    margin:auto;
+}
+
+#zoning4 header {
+    background-color:dimgray;
+    width: 800px;
+    height: 70px;
+    margin: 0;
+}
+
+#zoning4 .header {
+    display: inline-block;
+    background-color: white;
+    color: grey;
+}
+
+#zoning4 nav {
+    background-color: gold;
+    width: 800px;
+    height: 40px;
+	margin: 0;
+	border: none;
+}
+
+#zoning4 .nav {
+    display: inline-block;
+    background-color: white;
+    color: grey;
+    margin: 0;
+}
+
+#zoning4 section {
+    background-color:white;
+    height:500px;
+}
+
+.carre {
+    background-color: whitesmoke;
+    width: 750px;
+    height: 450px;
+    position: relative;
+    margin: auto;
+    top:10px;
+}
+
+#zoning4 footer {
+    background-color: dimgray;
+    color: #ffffff;
+    width: 800px;
+    height: 50px;
+    margin: 0;
+}
+
+#zoning4 footer p {
+    margin: 0;
+}
 
 /* page position */
 
