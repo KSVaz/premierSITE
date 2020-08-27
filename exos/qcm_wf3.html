@@ -3,9 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QCM WF3</title>
+    <title>QCM - WF3</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet"> 
+
+    <style>
+        body {
+            background: url(../img/fond.jpg) no-repeat;
+            background-size: cover;
+            font-family: 'Roboto';
+        }
+
+        main {
+            width: 1000px;
+            min-height: 500px;
+            border-radius: 20px;
+            margin: auto;
+            background-color:rgba(255, 255, 255, 0.8);
+            /* opacity: 0.8; */
+        }
+
+        #en-tête {
+            height: 100px;
+            line-height: 100px;
+            border-radius: 20px;
+            background: url(../img/concrete-texture.png);
+            text-align: center;
+        }
+
+        nav {
+            width: 1000px;
+            height: 50px;
+            text-align: center;
+            background-color:powderblue;
+        }
+
+        a {
+            line-height: 50px;       
+            text-decoration: none;
+            border: 3px solid whitesmoke;
+            border-radius: 8px;
+            padding: 5px;
+            margin-right: 55px;
+            color:black
+        }
+
+        a:hover {
+            background-color: teal;
+            color: white;
+        }
+
+        .bg-orange {
+            background-color: orange;
+            color: white;
+        }
+
+        /* position static = position qui ne change pas // position de base sur le flux */
+        /* div {
+            position:static;
+            left: 50px;
+            margin: 10px;
+        } */
+
+        .cercle {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: orangered;
+        }
+
+        /* le contenu before la balise q sera bleu et le contenu after la balise q sera rouge  */
+        q::before {
+            content:"«";
+            color: blue;
+        }
+        q::after {
+            content:"»";
+            color: red;
+        }
+
+    </style>
 </head>
 <body>
+    <main>
+       <div id="en-tête">
+            <h1>QCM - Webforce 3</h1>
+       </div>
+       <nav>
+           <a href="#">Accueil</a>
+           <a href="#">Page 1</a>
+           <a href="#">Page 2</a>
+           <a href="#">Page 3</a>
+           <a href="#">Page 4</a>
+           <a href="#">Page 5</a>
+           <a href="#">Page 6</a>
+       </nav>
+       <h2>Ceci est une titre 2 avec un mot en blanc sur un fond <span class="bg-orange">orange</span></h2>
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde omnis debitis, ipsa doloribus sequi in accusamus laudantium? Ex, inventore. Ea officia nam eius corrupti in quisquam odit dignissimos, perferendis distinctio?</p>
+
+       <div class="cercle"></div>
+
+       <hr>
+
+       <q>Quelques guillemets</q>, dit-il <q>sont mieux que pas du tout</q>
+
+    </main>
     
 </body>
 </html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float Chat</title>
+    <style>
+        body {
+            background-color: wheat;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        p {
+            background-color: powderblue;
+        }
+
+        .imagechat {
+            float: left;
+            width: 200px;
+            height: 180px;
+            border: 5px double violet;
+            position: relative;
+            left: 20%;
+            margin-top: 10px;
+            margin-right: 20px;       
+        }
+
+        .imagechat:hover {
+            border-color: goldenrod;
+        }
+
+/* METTRE UN P AVEC BACKGROUND IMAGE EN CSS  */
+
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Le float : introduction aux types de balises, block et inline</h1>
+        </header>
+
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, et cumque, consequatur nisi incidunt ducimus dolores, excepturi maiores quidem eaque vel distinctio! Quae sint laborum quasi alias quam natus eos?</p>
+        </div>
+
+        <div>
+            <ul>
+                <li>Les éléments de type <strong>block</strong> <em>bloc</em> (h1, p ul, ol, table, blocquote, li, section, dd, quote etc.)</li>
+                <li>Les éléments de type <strong>inline</strong> <em>en ligne</em> (a, img, strong, abbr, input, button, kbd, mark, strong etc.)</li>
+            </ul>
+        </div>
+
+        <hr>
+        <br>
+        <section>
+            <div>
+                <img src="../img/siamois.jpg" alt="Chat siamois" class="imagechat">
+                
+            </div>
+
+            <div>
+                <img src="../img/siamois.jpg" alt="Chat siamois" class="imagechat">
+               
+            </div>
+
+            <div>
+                <img src="../img/siamois.jpg" alt="Chat siamois" class="imagechat">
+                
+            </div>
+
+            <div>
+                <img src="../img/siamois.jpg" alt="Chat siamois" class="imagechat">
+                
+            </div>          
+        </section>
+
+        <div class="clear"></div>
+
+        <section>
+            <div>
+                <img src="../img/siamois.jpg" alt="Chat siamois" class="imagechat">
+                
+            </div>
+            <div>
+                <img src="../img/siamois.jpg" alt="Chat siamois" class="imagechat">
+                
+            </div>
+            <div>
+                <img src="../img/siamois.jpg" alt="Chat siamois" class="imagechat">
+               
+            </div>
+            <div>
+                <img src="../img/siamois.jpg" alt="Chat siamois" class="imagechat">
+                
+            </div>
+        </section>
+        <br>
+        <div class="clear"></div>
+
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur quas repellendus sit sint, commodi fuga facilis sapiente veritatis vitae ratione porro voluptate. Facere nemo quisquam nisi aliquid numquam harum hic?</p>
+        </div>
+
+        <hr>
+    </main>
+</body>
+</html>
