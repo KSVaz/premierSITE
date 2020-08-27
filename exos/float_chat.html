@@ -13,27 +13,35 @@
             clear: both;
         }
 
-        p {
+        .bg-bleu {
             background-color: powderblue;
         }
 
-        .imagechat {
+        section div {
             float: left;
             width: 200px;
             height: 180px;
             border: 5px double violet;
+            margin: 15px;
             position: relative;
-            left: 20%;
-            margin-top: 10px;
-            margin-right: 20px;       
+            left: 18%;
         }
 
-        .imagechat:hover {
+        section div p {
+            background-image: url(../img/siamois.jpg);
+            width: 200px;
+            height: 180px;
+            margin-top: 0;
+        }
+
+        .chats:hover {
             border-color: goldenrod;
+            text-align: center;
+            line-height: 150px;
+            color: white;
+            font-size: 5em;
+            font-weight: bold;
         }
-
-/* METTRE UN P AVEC BACKGROUND IMAGE EN CSS  */
-
     </style>
 </head>
 <body>
@@ -43,7 +51,7 @@
         </header>
 
         <div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, et cumque, consequatur nisi incidunt ducimus dolores, excepturi maiores quidem eaque vel distinctio! Quae sint laborum quasi alias quam natus eos?</p>
+            <p class="bg-bleu">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, et cumque, consequatur nisi incidunt ducimus dolores, excepturi maiores quidem eaque vel distinctio! Quae sint laborum quasi alias quam natus eos?</p>
         </div>
 
         <div>
@@ -55,53 +63,35 @@
 
         <hr>
         <br>
+
         <section>
-            <div>
-                <img src="../img/siamois.jpg" alt="Chat siamois" class="imagechat">
-                
-            </div>
+            <div class="chats"><p>1</p></div>
 
-            <div>
-                <img src="../img/siamois.jpg" alt="Chat siamois" class="imagechat">
-               
-            </div>
+            <div class="chats"><p>2</p></div>
 
-            <div>
-                <img src="../img/siamois.jpg" alt="Chat siamois" class="imagechat">
-                
-            </div>
+            <div class="chats"><p>3</p></div>
 
-            <div>
-                <img src="../img/siamois.jpg" alt="Chat siamois" class="imagechat">
-                
-            </div>          
+            <div class="chats"><p>4</p></div>          
         </section>
 
         <div class="clear"></div>
 
         <section>
-            <div>
-                <img src="../img/siamois.jpg" alt="Chat siamois" class="imagechat">
-                
-            </div>
-            <div>
-                <img src="../img/siamois.jpg" alt="Chat siamois" class="imagechat">
-                
-            </div>
-            <div>
-                <img src="../img/siamois.jpg" alt="Chat siamois" class="imagechat">
-               
-            </div>
-            <div>
-                <img src="../img/siamois.jpg" alt="Chat siamois" class="imagechat">
-                
-            </div>
+            <div class="chats"><p>5</p></div>
+
+            <div class="chats"><p>6</p></div>
+
+            <div class="chats"><p>7</p></div>
+
+            <div class="chats"><p>8</p></div>
         </section>
+
         <br>
+
         <div class="clear"></div>
 
         <div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur quas repellendus sit sint, commodi fuga facilis sapiente veritatis vitae ratione porro voluptate. Facere nemo quisquam nisi aliquid numquam harum hic?</p>
+            <p class="bg-bleu">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur quas repellendus sit sint, commodi fuga facilis sapiente veritatis vitae ratione porro voluptate. Facere nemo quisquam nisi aliquid numquam harum hic?</p>
         </div>
 
         <hr>
