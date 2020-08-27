@@ -391,7 +391,7 @@ img[src="img/toureiffel.jpg"] {
 	border: none;
 }
 
-#zoning4 .nav {
+#zoning4 .nav4 {
     display: inline-block;
     background-color: white;
     color: grey;
@@ -507,7 +507,7 @@ img[src="img/toureiffel.jpg"] {
     background-color: aquamarine;
 }
 
-#zoning6 nav {
+.nav6 {
     height: 60px;
     background-color: paleturquoise;
 	margin: 0;
@@ -515,9 +515,16 @@ img[src="img/toureiffel.jpg"] {
 	padding: 0;
 }
 
+.nav6 a {
+	background-color: paleturquoise;
+	border: none;
+	padding: 0;
+	
+}
+/* 
 #zoning6 nav p {
     margin: 0;
-}
+} */
 
 #zoning6 aside {
     float: left;
