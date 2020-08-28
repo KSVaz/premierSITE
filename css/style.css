@@ -637,3 +637,169 @@ img[src="img/toureiffel.jpg"] {
 	right: 0;
 	top: 0;
 }
+
+/* page position : POURCENTAGES */
+.trente {
+	width: 30%;
+	padding: 20px;
+	font-size: 22px;
+	background-color: rgb(255, 217, 0);
+	color: orange;
+}
+.cinquante {
+	width: 50%;
+	padding: 20px;
+	font-size: 22px;
+	background-color: rgb(255, 187, 0);
+	color: rgb(255, 115, 0);
+}
+.cent {
+	width: 100%;
+	padding: 20px;
+	font-size: 22px;
+	background-color: red;
+	color: rgb(153, 0, 0);
+}
+/* page position : FLOAT.1 */
+.float {
+	height: 170px;
+	width: 170px;
+	background-color: rgb(255, 232, 128);
+	border: 2px solid rgb(255, 196, 0);
+	margin: 10px;
+	float: left;
+	text-align: center;
+	font-size: 22px;
+}
+.dernier {
+	height: 170px;
+	width: 170px;
+	background-color: rgb(255, 232, 128);
+	border: 2px solid rgb(255, 196, 0);
+	margin-top: 20px;
+	margin: 10px;
+	text-align: center;
+	font-size: 22px;
+}
+/* page position : FLOAT.1 */
+.zone {
+	height: 70px;
+	background-color: #333;
+}
+.zone1, .zone2, .zone3, .zone4 {
+	height: 250px;
+	width: 25%;
+	float: left;
+}
+.zone1 {
+	background-color: rgb(248, 46, 56);
+}
+.zone2 {
+	background-color: rgb(255, 115, 0); 
+}
+.zone3 {
+	background-color: rgb(255, 187, 0);
+}
+.zone4 {
+	background-color: rgb(255, 217, 0);
+}
+
+/* flexbox  */
+
+/* La page des liens  */
+
+.ancre {
+	text-align: center;
+	padding: 100px;
+}
+
+.ancre a {
+	margin: 8px;
+	padding:5px 10px;
+	background-color: #2c3e50;
+	box-shadow: 0px 0px 10px 3px #333;
+	border-radius: 15px;
+
+	color: #fff;
+	text-decoration: none;
+}
+
+.ancre a:hover {
+	box-shadow: none;
+	transition-duration: 0.5s;
+	text-shadow: 1px 5px 10px white;
+}
+
+/* le menu dans l'id menu  */
+
+#menu nav {
+	background: transparent;
+	border: none;
+}
+
+#menu ul {
+	list-style: none;
+	text-align: center;
+}
+#menu ul li {
+	display: inline-block;
+}
+
+#menu nav a {
+	padding: 10px;
+	color: grey;
+	text-decoration: none;
+	background:#ddd;
+	transition: 1s ease-in;
+}
+
+#menu nav a:hover {
+	color: #fff;
+	background: #006699;
+}
+
+/* le menu avec les menus déroulants  */
+
+#menuDeroulant {
+	height: 650px;
+}
+
+#menuDeroulant nav {
+	width: 90%;
+	background: transparent;
+	border: none;
+	margin: 0 auto;
+}
+
+#menuDeroulant nav ul li {
+	list-style: none;
+	width: 20%;
+	float: left;
+}
+
+#menuDeroulant ul ul {
+	display: none;
+}
+
+#menuDeroulant nav ul li ul li {
+	border-top: 1px solid #464646;
+	width: 100%;
+}
+
+#menuDeroulant nav li {
+	background: #cccccc;
+}
+
+#menuDeroulant nav li a {
+	/* a mis en block pour qu'on puisse contrôler sa taille (pas possible en inline) */
+	display: block;
+	padding: 4px 0;	
+}
+
+#menuDeroulant ul {
+	text-align: center;
+}
+
+#menuDeroulant nav ul.niveau1 li.sousMenu:hover ul.niveau2 {
+	display: block;
+}
