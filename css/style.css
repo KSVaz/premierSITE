@@ -803,3 +803,163 @@ img[src="img/toureiffel.jpg"] {
 #menuDeroulant nav ul.niveau1 li.sousMenu:hover ul.niveau2 {
 	display: block;
 }
+
+/* la page des animations  */
+/* camel case = classe différenciée, majuscule au milieu d'un mot expression pour faciliter la lecture  */
+.infoBulle {
+	height: 250px;
+	width: 500px;
+	margin: auto;
+	padding-top: 15px;
+	background: #444444;
+	box-shadow: 0 0 50px #222222 inset;
+}
+
+.infoBulle p {
+	text-align: center;
+	padding-top: 30px;
+}
+
+.infoBulle a {
+	color: #cccccc;
+	text-decoration: none;
+	border-radius: 3px;
+	padding: 5px 15px;
+	text-shadow: 0 -2px 0 black;
+}
+
+.infoBulle a:hover {
+	color: white;
+	background: rgba(0, 0, 0, 0.4);
+	text-shadow: 0 1px 2px black;
+	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
+}
+
+.infoBulle a span {
+	position: absolute;
+	padding: 15px;
+	margin-top: 23px;
+	margin-left: -35px;
+	background: rgba(0, 0, 0, 0.9);
+	border-radius: 13px;
+	/* le contenu de span disparait grâce à cette ligne  */
+	opacity: 0;
+	color: #09c;
+	transition: .25s;
+	/* la mise à l'échelle transform: scale(0) fait aussi disparaitre le contenu de span  */
+	transform: scale(0) rotateZ(-12deg);
+}
+
+.infoBulle a:hover span {
+	opacity: 1;
+	transform: scale(1) rotate(0);
+}
+
+.infoBulle a span::before {
+	/* à quoi sert ce truc ? À compléter le dessin de l'infobulle  */
+	content:'';
+	position: absolute;
+	top: -5px;
+	left: 7px;
+	border-bottom: 6px solid rgba(0, 0, 0, 0.9);
+	border-left: 6px solid transparent;
+	border-right: 6px solid transparent;
+}
+
+/* Effets survol avec transitions et filtres */
+
+.imgEffets {
+	width: 302px;
+	height: 320px;
+	margin: 70px auto;
+}
+
+.imgEffets li {
+	width: 141px;
+	/* on fabrique le carré qui contient une image (suite pour ce carré plus bas) */
+	height: 150px;
+	margin: 5px;
+	float: left;
+	list-style: none;
+
+}
+
+/* le troisième li est clear both */
+.imgEffets li:nth-child(3) {
+	clear: both;
+}
+
+.imgEffets img {
+	/* on contrôle la position des éléments car on va jouer sur leur empilement  */
+	position: absolute;
+	/* toutes les images sont empilées en bas  */
+	z-index: 1;
+	/* on cale l'image dans un bloc carré de 150px, */
+	height: 150px;
+	box-shadow: 0 0 3px black;
+	/* cubic-bezier commence par 0, se termine par 1 et entre ces 2 valeurs nous mettons nos propres valeurs  */
+	transition: 0.5s cubic-bezier(0,3,0.4,1);
+	/* pour la transition il faut le :hover */
+}
+
+.imgEffets li:hover img {
+	/* l'image sur le hover sur la li passe au premier plan  */
+	z-index: 2;
+	transform: scale(1.5);
+	box-shadow: 0 0 10px black;
+}
+
+/* dans imgEffect, lorsqu'il y a un hover, les images non survolées prendront le style suivant  */
+.imgEffets:hover li:not(:hover) img {
+	/* on passe les li qui ne sont pas survolées en niveaux de gris et avec un filtre flou  */
+	filter: grayscale(1) blur(1px);
+}
+
+/* la page multimédia  */
+
+.videoFond {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.videoFond video {
+	width: 80%;
+	position: absolute;
+	z-index: 1;
+}
+
+.videoTexte {
+	/* on le décale par rapport à sa position normale  */
+	position: relative;
+	width: 100%;
+	height: 500px;
+}
+
+.videoFond p {
+	position: absolute;
+	z-index: 2;
+	width: 500px;
+	margin: auto;
+	background: rgba(255, 255, 255, 0.6);
+	left: 250px;
+	top: 150px;
+	padding: 20px;
+	font-size: 120%;
+	border-radius: 15px;
+	text-align: center;
+}
+
+/* pour la vidéo youtube embarquée  */
+
+iframe[src="https://www.youtube.com/embed/020g-0hhCAU"] {
+	width: 100%;
+	height: 700px;
+}
+
+iframe[allowfullscreen] {
+	width: 100%;
+}
+
+.audio {
+	text-align: center;
+}
