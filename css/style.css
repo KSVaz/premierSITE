@@ -706,6 +706,22 @@ img[src="img/toureiffel.jpg"] {
 
 /* flexbox  */
 
+.row {
+    display: flex;
+    flex-direction: row-reverse;
+	flex-wrap: wrap;
+	justify-content: right;
+}
+
+.col-1 {
+	width: 8.333333%;
+	height: 100px;
+	background-color: brown;
+	color: white;
+	
+	text-align: center;
+}
+
 /* La page des liens  */
 
 .ancre {
