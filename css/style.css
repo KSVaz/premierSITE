@@ -722,6 +722,34 @@ img[src="img/toureiffel.jpg"] {
 	text-align: center;
 }
 
+/* correction flexbox  */
+
+.flex div {
+	width: 150px;
+	height: 150px;
+	text-align: center;
+	font-size: 50px;
+	line-height: 150px;
+	color: white;
+	/* margin: 10px; */
+}
+
+.flex {
+	display: flex;
+	/* les div sont également réparties horizontalement  */
+	/* justify-content: space-between; */
+
+	/* avec un espace égal autour de chaque div  */
+	/* justify-content: space-around; */
+
+	/* de haut en bas en mode colonne  */
+	/* flex-direction: column; */
+
+	/* en mode colonne mais inversé */
+	/* flex-direction: column-reverse; */
+	flex-direction: row-reverse;
+}
+
 /* La page des liens  */
 
 .ancre {
@@ -978,4 +1006,15 @@ iframe[allowfullscreen] {
 
 .audio {
 	text-align: center;
+}
+
+/* page formulaire  */
+
+.formKatia {
+	background-color: royalblue;
+	width: 600px;
+	min-height: 300px;
+	margin: 0 auto;
+	padding: 10px;
+	box-sizing: border-box;
 }

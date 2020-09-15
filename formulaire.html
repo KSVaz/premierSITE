@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- la description indispensable pour les moteurs de recherche et qui s'affiche dans les résultats  -->
+    <meta name="description" content="Mon premier site : Colombbus - groupe de Suresnes 2020">
+    <!-- les mots clefs utiles pour les moteurs de recherche moins utilisées de nos jours -->
+    <meta name="keywords" content="HTML, CSS, Katia Semedo, Colombbus, Suresnes, premier site">
+    <!-- l'auteur de la page  -->
+    <meta name="author" content="Katia Semedo">
+    <title>PremierSITE - Formulaire</title>
+    <!-- Les typos  -->
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Lemonada&family=Oswald&display=swap" rel="stylesheet">
+    <!-- les icônes embarquées font awesome  -->
+    <script src="https://kit.fontawesome.com/8ec776306d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <a href="#logo">
+                <button type="button"><i class="far fa-arrow-alt-circle-up"></i></button>
+            </a>  
+            <img src="img/logo.png" alt="logo premier site">         
+        </div>
+        <!-- fin id="logo"  -->
+        <div id="slogan">
+            <a href="index.html" title="Mon premier site en HTML - Accueil"><h1>Mon premier site en HTML5 ET CSS3</h1></a>
+        </div>
+        <!-- fin id="slogan"  -->
+        <div id="social">
+            <a href="https://www.instagram.com/?hl=fr" target="blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://fr-fr.facebook.com/" target="blank"><i class="fab fa-facebook"></i></a>
+        </div>
+        <!-- fin id="social"  -->
+        <div class="clear"></div>
+    </header>
+    <nav>
+        <!-- zone du menu des liens pour passer de pages en pages  -->
+        <div class="ancreNav">
+            <a href="index.html" title="Accueil">Accueil</a>
+            <a href="texte.html" title="Texte">Texte</a>
+            <a href="selecteur.html" title="Sélecteur">Sélecteur</a>
+            <a href="image.html" title="Image">Image</a>
+            <a href="position.html" title="Position">Position</a>
+            <a href="zoning.html" title="Zoning">Zoning</a>
+            <a href="tableau.html" title="tableau">Tableau</a>
+            <a href="liste.html" title="Liste">Liste</a>
+            <a href="lien.html" title="Lien">Lien</a>
+            <a href="formulaire.html" title="Formulaire" class="active">Formulaire</a>
+            <a href="multimedia.html" title="Multimédia">Multimédia</a>
+            <a href="animation.html">Animation</a>
+            <a href="recap.html" title="Récapitulatif">Récapitulatif</a>
+        </div>
+    </nav>
+    <main> <!-- contenu principal  -->
+        <h2>Formuaire - <i class="fab fa-wpforms"></i></h2>
+        <form class="formKatia" action="">
+            <fieldset>
+                <label for="pseudo">Pseudo*</label>
+                <input type="text" name="pseudo" id="pseudo" placeholder="Votre pseudo" required>
+                <br>
+                <label for="prenom">Prénom</label>
+                <input type="text" name="prenom" id="prenom" placeholder="Votre prénom" required>
+                <br>
+                <label for="motdepasse">Mot de passe</label>
+                <input type="password" name="motdepasse" id="motdepasse" placeholder="Votre mot de passe" required>
+                <br>
+                <label for="email">Courriel</label>
+                <input type="email" name="email" id="email" placeholder="Votre courriel" required>
+                <br>
+                <label for="document">Votre cv en .pdf</label>
+                <input type="file" name="file" id="file">
+                <br>
+                <label for="fruits">Quels sont vos fruits préférés ?</label>
+                <br>
+                <input type="radio" name="orange" id="orange">Orange
+                <input type="radio" name="fraise" id="fraise">Fraise
+                <input type="radio" name="kiwi" id="kiwi">Kiwi
+                <input type="radio" name="cerise" id="cerise" checked>Cerise
+                <br>
+                <label for="legumes">Si vous devez sauver un légume de la destruvtion : lequel ?</label>
+                <br>
+                <select name="legumes" id="legumes">
+                    <option value="P">Poireau</option>
+                    <option value="N">Navet</option>
+                    <option value="A">Artichaut</option>
+                </select>
+                <br>
+                <label for="message">Message</label>
+                <input type="text" name="message" id="message">
+                <br>
+                <input type="submit" id="envoyer" name="envoyer" value="Envoyer">
+                <input type="reset" id="annuler" name="annuler" value="Annuler">
+            </fieldset>
+        </form>
+    </main><!-- fin de "main"  -->   
+
+    <main>
+        <!-- correction  -->
+        <h2>Un formulaire - <i class="fab fa-wpforms"></i> </h2>
+
+        <section class="formulaire">
+
+            <!-- action = url de destination (une adresse url ou un ficher) parfois cela peut être vide  -->
+            <!-- method = manière de faire circuler les données (POST ou GET) (ENVOYER ou RECUPERER)  -->
+            <!-- enctype = pour envoyer le fichier correctement, si nous envoyons un fichier. Pour cela il faut un input de type "file"  -->
+            <form action="inscription.php" method="POST" enctype="multipart/form-data">
+
+                <label for="pseudo">Pseudo*</label>
+                <input type="text" name="pseudo" id="pseudo" placeholder="Votre pseudo" required>
+
+                <br>
+
+                <label for="prenom"Prénom>Prénom</label>
+                <input type="text" name="prenom" id="prenom" placeholder="Votre prénom" required>
+
+                <br>
+
+                <label for="password">Mot de passe*</label>
+                <input type="password" name="password" id="password" placeholder="Mot de passe" required>
+
+                <br>
+
+                <label for="email">Courriel</label>
+                <input type="email" name="email" id="email" placeholder="Votre courriel" required>
+
+                <br>
+
+                <p>Quels sont vos fruits préférés</p>
+
+                <!-- les checkbox ont le même nom et on passera les infos, en php dans un tableau ex. fruits []  -->
+
+                <label for="orange">Orange</label>
+                <input type="checkbox" name="fruits[]" id="orange" value="orange">
+
+                <label for="fraise">Fraise</label>
+                <input type="checkbox" name="fruits[]" id="fraise" value="fraise">
+
+                <label for="kiwi">Kiwi</label>
+                <input type="checkbox" name="fruits[]" id="kiwi" value="kiwi">
+
+                <label for="cerise">Cerise</label>
+                <input type="checkbox" name="fruits[]" id="cerise" value="cerise" checked>
+
+                <p>Si vous devez sauver un légume de la destruction ; lequel ?</p>
+
+                <select name="legumes" id="legumes">
+                    <option value="poireau">Poireau</option>
+                    <option value="navet">Navet</option>
+                    <option value="artichaut">Artichaut</option>
+                    <option value="épinard" selected>Epinards</option>
+                </select>
+
+
+            </form>
+
+        </section>
+    </main>
+    <footer>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, laborum qui. Ab rem aliquid cum dicta recusandae. Harum odio, ipsam at sapiente vero officia iure. Sunt, laboriosam mollitia? Quae, reiciendis?</p>
+    </footer>
+</body>
+</html>
