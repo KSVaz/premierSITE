@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tableau HTML</title>
+    <style>
+        body {
+            background-color: rgb(198, 212, 216);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .premier {
+            border: 1px solid powderblue;
+            border-collapse: collapse;
+            width: 80%;
+            margin: 0 auto;
+            padding: 5px;
+        }
+
+        .premier td {
+            border: 1px solid powderblue; 
+            padding: 10px;
+        }
+
+        .premier caption {
+            border: 1px 1px 0 1px solid powderblue;
+            background-color: steelblue;
+            color: white;
+            padding: 10px;
+            font-weight: bold;
+        }
+
+        .premier thead td {
+            background-color: steelblue;
+            color: white;
+            font-weight: bold;
+        }
+
+        .premier tbody tr:nth-of-type(even) {
+            background-color: powderblue;
+        }
+
+        .premier tbody tr:nth-of-type(odd) {
+            background-color: azure;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        /* style correction  */
+
+        /* les styles pour le tableau */
+        table.solution {
+            margin: auto;
+            width: 80%;
+            border-collapse: collapse;
+        }
+        .solution caption {
+            background-color:lightblue;
+            height: 50px;
+            line-height: 50px;
+            font-size: 1.5em;
+            color: #fff;
+        }
+        .solution thead {
+            background-color:rgba(28, 152, 194, 0.993);
+            font-weight: bold;
+        }
+        .solution td {
+            border: 1px solid rgba(28, 152, 194, 0.993);
+            padding: 5px;
+            /* uniquement sur les td 
+            vertical-align: middle; */
+        }
+        /* .solution tbody tr:nth-of-type(even) {
+            background-color:rgba(95, 201, 236, 0.829);
+        } */
+        /* even = pair */
+        .solution tr:nth-child(even) {
+            background-color:rgba(95, 201, 236, 0.829);
+        }
+
+        /* style .autre  */
+
+        .autre {
+            margin: 0 auto;
+            width: 80%;
+            border-collapse: collapse;
+            border: 1px solid powderblue;
+        }
+
+        .autre th {
+            padding: 10px;
+            background-color: steelblue;
+            border-collapse: collapse;
+            border: 1px solid powderblue;
+            color: white;
+        }
+
+        .autre td {
+            border: 1px solid powderblue;
+            border-collapse:collapse;
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>   
+    <h1>Tableau HTML, mes magasins préférés</h1>
+
+    <table class="premier">
+        <caption>Adresses // fournisseurs</caption>
+
+        <thead>
+            <tr>
+                <td>Cie</td>
+                <td>Contact</td>
+                <td>Pays</td>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Le pain des amis</td>
+                <td>Maria Duroc</td>
+                <td>France</td>
+            </tr>
+            <tr>
+                <td>Los vinos buenos</td>
+                <td>François Duparc</td>
+                <td>Espagne</td>
+            </tr>
+            <tr>
+                <td>Kangaroo et Cie</td>
+                <td>Roland Mendel</td>
+                <td>Australie</td>
+            </tr>
+            <tr>
+                <td>Twinnings</td>
+                <td>Helen Spike</td>
+                <td>Royaume-Uni</td>
+            </tr>
+            <tr>
+                <td>Cycles Laurent</td>
+                <td>Pierre Laurent</td>
+                <td>France</td>
+            </tr>
+            <tr>
+                <td>Santini</td>
+                <td>Nanni Moretti</td>
+                <td>Italie</td>
+            </tr>
+        </tbody>       
+    </table>
+
+    <br>
+
+    <h2>Correction</h2>
+
+    <table class="solution">
+        <caption>Adresses // fournisseurs</caption>
+        <thead>
+            <tr>
+                <td>Compagnies</td>
+                <td>Contacts</td>
+                <td>Pays</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Le pain des amis</td>
+                <td>Maria Duroc</td>
+                <td>France</td>
+            </tr>
+            <tr>
+                <td>Los vinos buenos</td>
+                <td>François Duparc</td>
+                <td>Espagne</td>
+            </tr>
+            <tr>
+                <td>Kangoroo and Cie</td>
+                <td>Roland Mendel</td>
+                <td>Australie</td>
+            </tr>
+            <tr>
+                <td>Twinnings</td>
+                <td>Helen Spike</td>
+                <td>Royaume-Uni</td>
+            </tr>
+            <tr>
+                <td>Cycles Laurent</td>
+                <td>Pierre Laurent</td>
+                <td>France</td>
+            </tr>
+            <tr>
+                <td>Santini</td>
+                <td>Nanni Moretti</td>
+                <td>Italie</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br>
+
+    <h2>Autre tableau</h2>
+
+    <table class="autre">
+        <!-- th va permettre de mettre des éléments en début de ligne en gras et centré  -->
+        <tr>
+            <th>Identifiant</th>
+            <th>Nom</th>
+            <th>Prénom</th>
+        </tr>
+        <tr>
+            <th>N°1</th>
+            <td>Semedo</td>
+            <td>Katia</td>
+        </tr>
+        <tr>
+            <th>N°2</th>
+            <td>Semedo</td>
+            <td>Suzy</td>
+        </tr>
+        <tr>
+            <th>N°3</th>
+            <td>Semedo</td>
+            <td>Nelly</td>
+        </tr>
+    </table>
+</body>
+</html>
