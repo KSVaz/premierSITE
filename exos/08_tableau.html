@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Des tableaux</title>
+    <style>
+        .tableau table {
+            border: 2px solid #205D67;
+            
+            margin: auto;
+            width: 60%;
+            padding: 5px;
+        }
+        
+        .tableau td {
+            border: 2px solid #205D67;
+            padding: 10px;
+            text-align: left;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+    <section class="tableau">
+        <h2>Un premier tableau</h2>
+        <table>
+            <thead>
+                <tr>
+                    <td>Nom</td>
+                    <td colspan="2">Téléphones</td>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Tata</td>
+                    <td>06 14 15 16 17</td>
+                    <td>07 14 15 16 17</td>
+                </tr>
+                <tr>
+                    <td>Yoyo</td>
+                    <td>06 14 15 16 17</td>
+                    <td>07 14 15 161 7</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section class="tableau">
+        <h2>Un second tableau</h2>
+        <table>
+            <thead>
+                <tr>
+                    <td>Nom</td>
+                    <td>Annie Cordy</td>
+                </tr>
+            </thead>
+            
+            <tbody>
+                <tr>
+                    <td rowspan="2">Tel. :</td>
+                    <td>01 25 26 27 28</td>
+                </tr>
+            
+                <tr>
+                    <!-- <td>fusion</td> -->
+                    <td>01 35 36 39 41</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>   
+</body>
+</html>
