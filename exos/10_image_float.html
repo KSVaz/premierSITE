@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Float</title>
+    <style>
+
+        #conteneur {
+            background-color:navy;
+            margin: 0 auto;
+            width: 900px;
+        }
+
+        main {
+            width: 600px;
+            min-height: 600px;
+            margin: 0 auto;
+            background-color: turquoise;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        .float-right {
+            float: right;
+        }
+
+        .float-left {
+            float: left;
+        }
+
+        img {
+            width: 60px;
+            height: 60px;          
+        }
+
+        section:first-of-type p {
+            margin: 0;
+            width: 90%;
+            float: left;
+        }
+
+        /* correction  */
+
+        div#correction {
+            background-color: lightblue;
+            margin: 0 auto;
+            width: 600px;
+            /* ou min-height: fit content; */
+            min-height: 600px;
+        }
+
+        .a-droite {
+            float: right;
+            width: 50px;
+            height: 50px;
+        }
+
+        .a-gauche {
+            float: left;
+            width: 50px;
+            height: 50px;
+        }
+
+        @media (max-width: 600px) {
+            #conteneur {
+                width: 100%;
+                background-color: palegreen;
+                height: auto;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div id="conteneur">
+        <main>
+            <h1>Images en float</h1>
+            
+            <section>
+                <h2>Faire flotter l'image à droite :</h2>          
+                        <p>Un paragraphe avec une image qui flotte à droite. Un paragraphe avec une image qui flotte à droite. Un paragraphe avec une image qui flotte à droite. Un paragraphe avec une image qui flotte à droite. Un paragraphe avec une image qui flotte à droite.</p>         
+                        <img src="../img/star.png" alt="Une étoile" class="float-right">
+            </section>
+                
+            <div class="clear"></div>
+                 
+            <section>
+                <h2>Faire flotter l'image à gauche :</h2>       
+                    <img src="../img/star.png" alt="Une étoile" class="float-left">  
+                    <p>Un paragraphe avec une image qui flotte à gauche. Un paragraphe avec une image qui flotte à gauche. Un paragraphe avec une image qui flotte à gauche. Un paragraphe avec une image qui flotte à gauche.</p>
+            </section>      
+        </main>  
+        
+        <div id="correction">
+            <h2>Images en float</h2>
+            <p>1/ Faire flotter l'image à droite :</p>
+            <p>
+                
+                <img src="../img/star.png" alt="Une étoile" class="a-droite">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident aperiam unde, neque pariatur sit asperiores tempora, ipsum laboriosam id, expedita repudiandae voluptates reprehenderit ut repellat quisquam deserunt vel porro modi!
+            </p>
+            
+            <p>2/ Faire flotter l'image à droite :</p>
+            <p>
+                <img src="../img/star.png" alt="Une étoile" class="a-gauche"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci, nostrum asperiores vel possimus facilis saepe. Fuga perspiciatis at porro itaque beatae, quam odio cumque tempore labore, aliquam delectus accusamus placeat.
+            </p>
+        </div>
+        
+        <div class="clear"></div>
+    </div>
+</body>
+</html>
