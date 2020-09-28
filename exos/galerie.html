@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerie</title>
+
+    <style> /* style de la page */
+        
+        /* //RESET//  */
+
+                /* http://meyerweb.com/eric/tools/css/reset/ 
+        v2.0 | 20110126
+        License: none (public domain)
+        */
+
+        html, body, div, span, applet, object, iframe,
+        h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+        a, abbr, acronym, address, big, cite, code,
+        del, dfn, em, img, ins, kbd, q, s, samp,
+        small, strike, strong, sub, sup, tt, var,
+        b, u, i, center,
+        dl, dt, dd, ol, ul, li,
+        fieldset, form, label, legend,
+        table, caption, tbody, tfoot, thead, tr, th, td,
+        article, aside, canvas, details, embed, 
+        figure, figcaption, footer, header, hgroup, 
+        menu, nav, output, ruby, section, summary,
+        time, mark, audio, video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+        }
+        /* HTML5 display-role reset for older browsers */
+        article, aside, details, figcaption, figure, 
+        footer, header, hgroup, menu, nav, section {
+            display: block;
+        }
+        body {
+            line-height: 1;
+        }
+        ol, ul {
+            list-style: none;
+        }
+        blockquote, q {
+            quotes: none;
+        }
+        blockquote:before, blockquote:after,
+        q:before, q:after {
+            content: '';
+            content: none;
+        }
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+        /* // FIN DU RESET //  */
+
+
+        * { /* style global */
+            box-sizing: border-box;
+        }
+
+        .clear { /* Déclaration du clear pour remmise en flux */
+            clear: both;
+        }
+
+        body { /* style de la page  */
+            font-family: Arial, Helvetica, sans-serif;           
+        }       
+
+        #conteneur { /* style du conteneur */
+            width: 1239px;
+            height: 596px;
+            margin: 10px auto;
+        }
+
+        header { /* style de l'en-tête */
+            width: 100%;
+            height: 150px;
+            background-color: #98bdee;
+            text-transform: uppercase;           
+        }
+
+        nav { /* style de la navigation */
+            height: 100px;
+            background-color: #bfbfdb;
+            text-transform: uppercase;           
+        }
+
+        section { /* style de la section principale */
+            height: 245px;
+            background-color: #ebcdd2;      
+        }
+
+        #photos { /* style de la div contenant les photos  */
+            width: 650px;
+            margin: 0 auto;
+            padding-top: 30PX;
+        }
+
+        figure { /* style des photos */
+            float: left;
+            margin: 5px;           
+        }
+
+        figcaption { /* style des légendes  */         
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #ebcdd2;
+            text-align: center;
+            /* légende sur la photo */
+            position: relative;
+            top: -18px;
+        }
+
+        footer { /* style du bas de page */
+            height: 80px;
+            background-color: #98bdee;
+            text-transform: uppercase;
+        }       
+
+    </style> <!-- fin du style de la page -->
+
+</head>
+<body>
+    <div id="conteneur"> <!-- début du conteneur -->
+        <header> <!-- en-tête de la page -->
+            <p>Header</p>
+        </header> <!-- fin de l'en-tête -->
+        
+        <nav> <!-- navigation -->
+            <p>Nav</p>
+        </nav> <!-- fin de navigation -->
+        
+        <section> <!-- section principale -->
+            <p>De bien beaux voiliers</p>
+        
+            <div id="photos">
+                <figure>
+                    <img src="../img/voiliergonet.jpg" alt="Un voilier">
+                    <figcaption>Légende</figcaption>
+                </figure>
+        
+                <figure>
+                    <img src="../img/voilierimage.jpg" alt="Un voilier">
+                    <figcaption>Légende</figcaption>
+                </figure>
+        
+                <figure>
+                    <img src="../img/voilierplaque.jpg" alt="Un voilier">
+                    <figcaption>Légende</figcaption>
+                </figure>
+        
+                <figure>
+                    <img src="../img/voiliertrinite.jpg" alt="Un voilier">
+                    <figcaption>Légende</figcaption>
+                </figure>
+            </div>
+       
+        </section> <!-- fin de section principale -->
+        
+        <div class="clear"></div> <!-- fin du float -->
+        
+        <footer> <!-- pied de page -->
+            <p>Footer</p>
+        </footer>
+    </div> <!-- fin du conteneur -->
+</body>
+</html>
