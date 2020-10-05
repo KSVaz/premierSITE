@@ -45,7 +45,7 @@
 
         ul {
             background-color: rgba(255, 255, 255, 0.6);
-            width: 500px;
+            /* width: 500px; */
         }
 
         /* 6- Le pseudo-classes ex. : :link tous les liens qui ne sont pas encore cliqués */
@@ -94,6 +94,8 @@
 
         /* 12- La valeur qui suit l'étoile doit apparaître quelque part dans la valeur de l'attribut */
 
+        /* a[href-="mac"], a[href-="mac"] si je veus chercher 2 chaines de caractères */
+
         a[href*="mac"] {
             background-color: tomato;
             color: white;
@@ -101,6 +103,127 @@
         }
 
         /* 13- */
+
+        /* 14- */
+
+        /* 15- */
+
+        /* 16- */
+
+        /* 17- Une pseudo classe pour cibler un élément d'interface utilisateur */
+
+        input[type=radio]:checked + label {
+            border: 2px solid red;
+            background-color: lightgreen;
+        }
+
+        /* 18- */
+
+        /* 19- pseudo classe d'action utilisateur : :hover */
+
+        a:hover {
+            border-bottom: 3px dotted black;
+            /* text-decoration: underline; */
+        }
+
+        /* 20- pseudo classe de négation : toutes les div SAUF celle qui a l'identifiant #container prendront le style ci-dessous */
+
+        div:not(#container) {
+            color: darkturquoise;
+        }
+
+        /* 21- ELEMENT::first-line pseudo-éléments identifiés par "::" ; */
+
+        p::first-line {
+            font-weight: bold;
+        }
+
+        p#lettrine::first-letter {
+            font-size: 2em;
+            /* float: left; */
+        }
+
+        /* 22- la pseudo-classe ELEMENT:nth-child(n) */
+
+        #courses li:nth-child(3) {
+            background-color: turquoise;
+            color: tomato;
+        }
+
+        /* 23- ELEMENT:nth-last-child() pour sélectionner l'avant dernier par exemple, ou pour sélectionner à partir du dernier */
+
+        #departements li:nth-last-child(2) {
+            background-color: #fff;
+        }
+
+        /* 24- */
+
+        /* 25- */
+
+        /* 26- ELEMENT:first-child */
+
+        ul#departements li {
+            border-top: 1px solid teal;
+            border-bottom: 1px solid teal;
+            padding: 2px;
+        }
+
+        ul#departements li:first-child {
+            border-top: none;
+        }
+
+        /* 27- ELEMENT:last-child */
+
+        ul#courses li:last-child {
+            font-family: cursive;
+        }
+
+        ul#departements li:last-child {
+            border-bottom: none;
+        }
+
+        ul#mini-menu {
+            width: 200px;
+            background-color: deeppink;
+            color: #fff;
+            list-style: none;
+            padding-left: 0;
+            margin: auto;
+        }
+
+        ul#mini-menu li {
+            padding: 10px;
+            border-bottom: 1px solid #000;
+            border-top: 1px solid #858585;
+        }
+
+        ul#mini-menu li:first-child {
+            border-top: none;
+        }
+
+        ul#mini-menu li:last-child {
+            border-bottom: none;
+        }
+
+        /* 28- ELEMENT:only-child */
+
+        article p:only-child {
+            color: orangered;
+        }
+        
+        /* 29- ELEMENT:first-of-type */
+
+        article ul:first-of-type > li:nth-child(2) {
+            font-weight: bold;
+        }
+        
+        p + ul li:last-child {
+            color: red;
+        }
+
+        article ul:first-of-type li:nth-last-child(1) {
+            font-size: 20px;
+        }
 
     </style>
 </head>
@@ -119,10 +242,12 @@
         <p>1/ Un lien vers le site de mon choix <a href="https://macbidouille.com">Cliquez ici</a></p>
         <p>Et là un lien vers <a href="https://www.macg.co/">Mac Génération</a></p>
         <p>2/ Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita corporis dicta doloribus natus, nesciunt officia quas excepturi soluta aperiam cumque blanditiis obcaecati, id unde, nisi dolores tenetur ducimus temporibus. Doloremque. Et ici un lien vers le journal Toute l'Europe <a href="https://www.touteleurope.eu/" target="blank">Toute l'Europe</a></p>
-        <ul>
+
+        <ul id="courses">
             <li>Pain</li>
             <li>Vin</li>
             <li>Boursin</li>
+            <li>Raisin</li>
         </ul>     
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis vero nesciunt impedit pariatur alias aut illo sapiente fugiat temporibus minima, ab cum possimus ea a quisquam cupiditate? Neque, delectus? Accusamus?</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse recusandae in officiis enim? Ipsam neque quidem error blanditiis, quibusdam necessitatibus dolorum! Provident omnis eaque asperiores. Aliquid tenetur saepe quis eaque?</p>
@@ -142,8 +267,155 @@
             </ul>
         </div>
         <h3>coucou</h3>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores voluptatibus eius possimus iusto facere repudiandae minima ipsam quisquam voluptates aut molestiae et quidem adipisci velit ducimus commodi unde, veniam a?</p>
+        <p id="lettrine">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores voluptatibus eius possimus iusto facere repudiandae minima ipsam quisquam voluptates aut molestiae et quidem adipisci velit ducimus commodi unde, veniam a?</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque nemo dolorem maxime, quia ex quas atque impedit doloribus aut adipisci excepturi porro, reiciendis fuga cumque deserunt molestias eum totam quis.</p>
-    </div>
+        <hr>
+        <form action="#" method="POST">
+            <input type="radio" name="rad" value="bouton radio">
+            <label for="rad">Bouton radio</label>
+        </form>
+        <hr>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, voluptatibus aliquid ullam eos repudiandae aliquam suscipit illum accusamus nisi in sit alias obcaecati aspernatur enim ratione vel voluptate deleniti minus!</p>
+
+        <h2>La liste des départements français</h2>
+
+        <ul id="departements">
+            <li>01 - Ain - Bourg-en-bresse</li>
+            <li>02 - Aisne - Laon</li>         
+            <li>03 - Allier - Moulins</li>        
+            <li>04 - Alpes-de-Haute-Provence - Digne-les-bains</li>         
+            <li>05 - Hautes-alpes - Gap</li>         
+            <li>06 - Alpes-maritimes - Nice</li>         
+            <li>07 - Ardèche - Privas</li>        
+            <li>08 - Ardennes - Charleville-mézières</li>         
+            <li>09 - Ariège - Foix</li>         
+            <li>10 - Aube - Troyes</li>
+            <li>11 - Aude - Carcassonne</li>
+            <li>12 - Aveyron - Rodez</li>
+            <li>13 - Bouches-du-Rhône - Marseille</li>
+            <li>14 - Calvados - Caen</li>
+            <li>15 - Cantal - Aurillac</li>
+            <li>16 - Charente - Angoulême</li>
+            <li>17 - Charente-maritime - La rochelle</li>
+            <li>18 - Cher - Bourges</li>
+            <li>19 - Corrèze - Tulle</li>
+            <li>2A - Corse-du-sud - Ajaccio</li>
+            <li>2B - Haute-Corse - Bastia</li>
+            <li>21 - Côte-d'Or - Dijon</li>
+            <li>22 - Côtes-d'Armor - Saint-brieuc</li>
+            <li>23 - Creuse - Guéret</li>
+            <li>24 - Dordogne - Périgueux</li>
+            <li>25 - Doubs - Besançon</li>
+            <li>26 - Drôme - Valence</li>
+            <li>27 - Eure - Évreux</li>
+            <li>28 - Eure-et-loir - Chartres</li>
+            <li>29 - Finistère - Quimper</li>
+            <li>30 - Gard - Nîmes</li>
+            <li>31 - Haute-garonne - Toulouse</li>
+            <li>32 - Gers - Auch</li>
+            <li>33 - Gironde - Bordeaux</li>
+            <li>34 - Hérault - Montpellier</li>
+            <li>35 - Ille-et-vilaine - Rennes</li>
+            <li>36 - Indre - Châteauroux</li>
+            <li>37 - Indre-et-loire - Tours</li>
+            <li>38 - Isère - Grenoble</li>
+            <li>39 - Jura - Lons-le-saunier</li>
+            <li>40 - Landes - Mont-de-marsan</li>
+            <li>41 - Loir-et-cher - Blois</li>
+            <li>42 - Loire - Saint-étienne</li>
+            <li>43 - Haute-loire - Le puy-en-velay</li>
+            <li>44 - Loire-atlantique - Nantes</li>
+            <li>45 - Loiret - Orléans</li>
+            <li>46 - Lot - Cahors</li>
+            <li>47 - Lot-et-garonne - Agen</li>
+            <li>48 - Lozère - Mende</li>
+            <li>49 - Maine-et-loire - Angers</li>
+            <li>50 - Manche - Saint-lô</li>
+            <li>51 - Marne - Châlons-en-champagne</li>
+            <li>52 - Haute-marne - Chaumont</li>
+            <li>53 - Mayenne - Laval</li>
+            <li>54 - Meurthe-et-moselle - Nancy</li>
+            <li>55 - Meuse - Bar-le-duc</li>
+            <li>56 - Morbihan - Vannes</li>
+            <li>57 - Moselle - Metz</li>
+            <li>58 - Nièvre - Nevers</li>
+            <li>59 - Nord - Lille</li>
+            <li>60 - Oise - Beauvais</li>
+            <li>61 - Orne - Alençon</li>
+            <li>62 - Pas-de-calais - Arras</li>
+            <li>63 - Puy-de-dôme - Clermont-ferrand</li>
+            <li>64 - Pyrénées-atlantiques - Pau</li>
+            <li>65 - Hautes-Pyrénées - Tarbes</li>
+            <li>66 - Pyrénées-orientales - Perpignan</li>
+            <li>67 - Bas-rhin - Strasbourg</li>
+            <li>68 - Haut-rhin - Colmar</li>
+            <li>69 - Rhône - Lyon</li>
+            <li>70 - Haute-saône - Vesoul</li>
+            <li>71 - Saône-et-loire - Mâcon</li>
+            <li>72 - Sarthe - Le mans</li>
+            <li>73 - Savoie - Chambéry</li>
+            <li>74 - Haute-savoie - Annecy</li>
+            <li>75 - Paris - Paris</li>
+            <li>76 - Seine-maritime - Rouen</li>
+            <li>77 - Seine-et-marne - Melun</li>
+            <li>78 - Yvelines - Versailles</li>
+            <li>79 - Deux-sèvres - Niort</li>
+            <li>80 - Somme - Amiens</li>
+            <li>81 - Tarn - Albi</li>
+            <li>82 - Tarn-et-Garonne - Montauban</li>
+            <li>83 - Var - Toulon</li>
+            <li>84 - Vaucluse - Avignon</li>
+            <li>85 - Vendée - La roche-sur-yon</li>
+            <li>86 - Vienne - Poitiers</li>
+            <li>87 - Haute-vienne - Limoges</li>
+            <li>88 - Vosges - Épinal</li>
+            <li>89 - Yonne - Auxerre</li>
+            <li>90 - Territoire de belfort - Belfort</li>
+            <li>91 - Essonne - Évry</li>
+            <li>92 - Hauts-de-seine - Nanterre</li>
+            <li>93 - Seine-Saint-Denis - Bobigny</li>
+            <li>94 - Val-de-marne - Créteil</li>
+            <li>95 - Val-d'Oise - Cergy Pontoise</li>
+            <li>971 - Guadeloupe - Basse-terre</li>
+            <li>972 - Martinique - Fort-de-france</li>
+            <li>973 - Guyane - Cayenne</li>
+            <li>974 - La réunion - Saint-denis</li>
+            <li>976 - Mayotte - Dzaoudzi</li>
+        </ul>
+
+        <hr>
+        <h2>Un mini menu</h2>
+        <ul id="mini-menu">
+            <li>List Item 1</li>
+            <li>List Item 2</li>
+            <li>List Item 3</li>
+        </ul>
+        <hr>
+        <h2>Des paragraphes</h2>
+        <article>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum quis animi maxime nihil aliquid deleniti alias perspiciatis molestiae minima veniam laborum deserunt facere placeat neque, impedit aspernatur velit, cupiditate soluta.</p>
+        </article>
+        <article>
+            <p>Esse dolor aperiam consectetur cumque aliquam perspiciatis corrupti magni dicta, similique reiciendis blanditiis ut, facilis ullam. Amet itaque nisi commodi dignissimos quo iusto magni, perferendis vero animi voluptas? Dicta, quae?</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat, aliquam, quis voluptatem quia ut, tempore fugit vero sunt repellat eos impedit. Asperiores fuga aut molestias itaque! Ex ullam optio nam.</p>
+        </article>
+        <hr>
+        <h2>Suite ...</h2>
+
+        <article>
+            <p>Mon paragraphe ici.</p>
+            <ul>
+                <li>Elément de liste 1</li>
+                <li>Elément de liste 2</li>
+            </ul>
+
+            <ul>
+                <li>Elément de liste 3</li>
+                <li>Elément de liste 4</li>
+            </ul>
+        </article>
+
+    </div> <!-- /* fin de container */ -->
 </body>
 </html>
