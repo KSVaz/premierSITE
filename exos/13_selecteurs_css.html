@@ -165,7 +165,8 @@
         ul#departements li {
             border-top: 1px solid teal;
             border-bottom: 1px solid teal;
-            padding: 2px;
+            padding: 4px;
+            list-style: url(../img/star1.png);
         }
 
         ul#departements li:first-child {
@@ -223,6 +224,14 @@
 
         article ul:first-of-type li:nth-last-child(1) {
             font-size: 20px;
+        }
+
+        ol li {
+            list-style: upper-roman;
+        }
+
+        #sous-liste li {
+            list-style: lower-alpha;
         }
 
     </style>
@@ -415,6 +424,32 @@
                 <li>Elément de liste 4</li>
             </ul>
         </article>
+
+        <ol>
+            <li>coucou 1
+                <ol id="sous-liste">
+                    <li>coucou 1</li>
+                    <li>coucou 2</li>
+                    <li>coucou 3</li>
+                    <li>coucou 4</li>
+                    <li>coucou 5</li>
+                    <li>coucou 6</li>
+                    <li>coucou 7</li>
+                    <li>coucou 8</li>
+                    <li>coucou 9</li>
+                    <li>coucou 10</li>
+                </ol>
+            </li>
+            <li>coucou 2</li>
+            <li>coucou 3</li>
+            <li>coucou 4</li>
+            <li>coucou 5</li>
+            <li>coucou 6</li>
+            <li>coucou 7</li>
+            <li>coucou 8</li>
+            <li>coucou 9</li>
+            <li>coucou 10</li>
+        </ol>
 
     </div> <!-- /* fin de container */ -->
 </body>
